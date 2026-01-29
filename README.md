@@ -56,6 +56,37 @@ pip install -r requirements.txt
 python run.py
 ```
 
+### Docker
+
+**Билд и запуск:**
+
+```bash
+docker build -t fastapi-shop .
+docker run -d -p 8000:8000 --name fastapi-shop-container fastapi-shop
+```
+
+**С Docker Compose:**
+
+```bash
+docker-compose up -d
+```
+
+**Остановка:**
+
+```bash
+docker stop fastapi-shop-container
+# или
+docker-compose down
+```
+
+**Просмотр логов:**
+
+```bash
+docker logs -f fastapi-shop-container
+# или
+docker-compose logs -f
+```
+
 ## Проверка установки
 
 ```bash
