@@ -1,1 +1,28 @@
+# Python
 .venv
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environment
+.env
+.env.local
+
+# Database
+*.db
+*.db-journal
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Static files
+static/images/*
+!static/images/.gitkeep
+
+# Alembic
+alembic/versions/*.pyc
